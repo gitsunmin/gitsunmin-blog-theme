@@ -91,10 +91,15 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
-        {{ template "_internal/disqus.html" . }}
-      </div>
+    <div class="row" style="margin-top: 200px;">
+      <script src="https://utteranc.es/client.js"
+        repo="gitsunmin/gitsunmin.github.io"
+        issue-term="pathname"
+        label="comment"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+      </script>
     </div>
   </div>
   <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
@@ -108,15 +113,6 @@
 </div>
 <Script src="{{.Site.Params.staticPath}}/js/scrollProgressBar.js"></script>
 {{ end }}
-
-<script src="https://utteranc.es/client.js"
-        repo="https://github.com/gitsunmin/gitsunmin.github.io.git"
-        issue-term="pathname"
-        label="comment"
-        theme="icy-dark"
-        crossorigin="anonymous"
-        async>
-</script>
 
 <script>
   var topScroll = document.getElementById("topScroll");
