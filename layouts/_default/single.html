@@ -19,12 +19,10 @@ define "main" }}
             <div class="text-center">
               {{ .Params.author }}
               <small>|</small>
-              {{ .Date.Format (.Site.Params.datesFormat.article | default "Jan
-              2, 2006") }} {{ if or (.Site.Params.singlePages.readTime.enable |
+              {{ .Date.Format (.Site.Params.datesFormat.article | default "Jan 2, 2006") }} {{ if or (.Site.Params.singlePages.readTime.enable |
               default true) (.Params.enableReadingTime) }}
               <span id="readingTime">
-                {{ .Site.Params.singlePages.readTime.content | default "min
-                read" }}
+                {{ .Site.Params.singlePages.readTime.content | default "min read" }}
               </span>
               {{ end }}
             </div>
